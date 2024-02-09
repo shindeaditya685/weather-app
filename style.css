@@ -86,3 +86,36 @@ p {
   font-weight: bold;
   color: hsla(0, 0%, 0%, 0.75);
 }
+
+/* for mobile */
+@media (max-width: 480px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+/* for tablets */
+
+@media (min-width: 768px) {
+  form {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .cityInput {
+    width: 70%;
+    font-size: 3rem;
+  }
+
+  button[type="submit"] {
+    width: 30%;
+    font-size: 3rem;
+  }
+}
